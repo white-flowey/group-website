@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  height: 50px; /* Adjust height as needed */
+}
+
+h1 {
+  margin: 0; /* Remove default margin */
+}
+
+.navbar-nav {
+  padding: 0; /* Remove default padding */
+}
+
+.nav-item {
+  margin: 0 10px; /* Space between navbar items */
+}
+
+.nav-link {
+  color: #007bff; /* Bootstrap's primary color */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+main {
+  margin: 20px auto; /* Center the main content */
+  max-width: 800px; /* Max width for main content */
+  padding: 20px; /* Add padding to the main content */
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: gray;
+}
