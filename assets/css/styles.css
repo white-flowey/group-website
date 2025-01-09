@@ -1,6 +1,31 @@
+html,
 body {
-  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  scroll-padding-top: 140px;
 }
+
+.scroll-container {
+  margin-top: 100px;
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-item {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.section-title {
+  margin-bottom: 20pt;
+}
+
+/* FORMATTING */
 
 footer {
   text-align: center;
@@ -51,7 +76,6 @@ h1 {
 
 main {
   margin: 20px auto; /* Center the main content */
-  max-width: 800px; /* Max width for main content */
   padding: 20px; /* Add padding to the main content */
 }
 
@@ -59,8 +83,33 @@ main {
   text-align: center;
 }
 
-.dashed-line {
-  border: none; /* Remove default border */
-  border-top: 1px dashed #000; /* Create a dashed top border */
-  margin: 20px 0; /* Add spacing above and below */
+.opportunities-footnote {
+  font-size: x-small;
+  text-align: center;
+  margin-top: 10pt;
+}
+
+/* PEOPLE */
+.team-member .name {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.team-member .position {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-member .email a {
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.team-member .email a:hover {
+  color: #0056b3;
+}
+
+.team-member .institute {
+  font-style: italic;
 }
